@@ -12,8 +12,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.persistence.OrderBy;
 import java.time.LocalDateTime;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -113,7 +111,7 @@ public class ApplicationController {
         return new ResponseEntity<>(dto, HttpStatus.OK);
     }
 
-
+    //---sink and hits of the game---//
     private List<Map> historyofSalvos (GamePlayer gamePlayer, GamePlayer oponente) {
 
         List<Map> totalMap = new ArrayList<>();
@@ -270,7 +268,6 @@ public class ApplicationController {
 
 
         private Boolean getIfAllSunk (GamePlayer self, GamePlayer opponent) {
-
         if(!opponent.getShip().isEmpty() && !self.getSalvo().isEmpty()){
             return opponent.getSalvo().stream().flatMap(salvo -> salvo.getSalvoLocations().stream()).collect(Collectors.toList()).containsAll(self.getShip().stream()
                     .flatMap(ship -> ship.getlocations().stream()).collect(Collectors.toList()));

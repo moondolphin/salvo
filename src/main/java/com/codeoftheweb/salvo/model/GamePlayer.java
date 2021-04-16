@@ -28,13 +28,13 @@ public class GamePlayer {
     @JoinColumn(name="game_id")
     private Game game;
 
-
     @OneToMany(mappedBy = "gamePlayer", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private Set<Ship> ship = new HashSet<>();
 
     @OrderBy
     @OneToMany(mappedBy = "gamePlayer", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private Set<Salvo> salvoes;
+
 
     public GamePlayer() {
         this.date = LocalDateTime.now();
@@ -136,7 +136,7 @@ public class GamePlayer {
         });
     }
 
-//---este es el oponente---//
+//---the opponent---//
     public GamePlayer getOtherPlayer (){
         return this.getGame().getGamePlayers().stream().filter(gamePlayer -> gamePlayer.getId() != this.getId()).findFirst().orElse(new GamePlayer());
     }
