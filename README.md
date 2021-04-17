@@ -58,8 +58,9 @@ Rest Repositories</strong></p>
 <p>Descargar e instalar IDE de preferencia. Se recomienda <strong>IntelliJ IDEA</strong></p>
 </li>
  
- <li>
-<p>Run: http:// localhost:8080/web/games.html</p>
+<li>
+<p>If the commands were entered correctly, you will be able to access the project from the following url:</p>
+<p><g-emoji class="g-emoji" alias="globe_with_meridians" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f310.png">🌐</g-emoji> <a href="http://localhost:8080/web/games.html" rel="nofollow">http://localhost:8080/web/games.html</a></p>
 </li>
 
 
