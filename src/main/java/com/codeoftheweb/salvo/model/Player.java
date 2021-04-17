@@ -62,7 +62,7 @@ public class Player {
         return scores.stream().filter(score -> score.getGame().getId()==game.getId()).findFirst().orElse(null);
     }
 
-    //---for avoid recursion---//
+    //----for avoid recursion----//
     @JsonIgnore
     public List<Game> getGames () {
         return gamesPlayers.stream().map(sub-> sub.getGame()).collect(Collectors.toList());
