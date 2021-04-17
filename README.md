@@ -33,10 +33,6 @@
 <p>IntelliJ IDEA 2021.1 (Community Edition)</p>
 </li>
 
-<li>
-<p>Run: http:// localhost:8080/web/games.html</p>
-</li>
-
 
 </ul>
 <hr>
@@ -60,6 +56,10 @@ Rest Repositories</strong></p>
 </li>
 <li>
 <p>Descargar e instalar IDE de preferencia. Se recomienda <strong>IntelliJ IDEA</strong></p>
+</li>
+ 
+ <li>
+<p>Run: http:// localhost:8080/web/games.html</p>
 </li>
 
 
