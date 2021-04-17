@@ -19,7 +19,6 @@ public class GamePlayer {
     private LocalDateTime date;
 
 
-
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name="player_id")
     private Player player;
@@ -116,9 +115,8 @@ public class GamePlayer {
         Map<String,Object> dto= new LinkedHashMap<String,Object>();
         dto.put("Id", game.getId());
         dto.put("created", game.getDateGame());
-        dto.put("gamePlayers", game.getGamePlayers().stream().map(GamePlayer::gamePlayerDTO).collect(Collectors.toList())); //,playerDTO(gamePlayer.getPlayer()))
+        dto.put("gamePlayers", game.getGamePlayers().stream().map(GamePlayer::gamePlayerDTO).collect(Collectors.toList()));
         dto.put("ships", ship.stream().map(Ship::shipPlayerDTO).collect(Collectors.toSet()));
-        //dto.put("salvo", game.getGamePlayers().stream().map(GamePlayer -> GamePlayer.getSalvo().stream().map(Salvo::salvoDTO).collect(toSet())));
         dto.put("salvoes",  this.getGame().getGamePlayers()
                 .stream()
                 .flatMap(gamePlayer1 -> gamePlayer1.getSalvo()

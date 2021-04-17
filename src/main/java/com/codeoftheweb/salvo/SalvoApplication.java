@@ -1,6 +1,5 @@
 package com.codeoftheweb.salvo;
 
-
 import com.codeoftheweb.salvo.model.*;
 import com.codeoftheweb.salvo.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +20,6 @@ import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.WebAttributes;
 import org.springframework.security.web.authentication.logout.HttpStatusReturningLogoutSuccessHandler;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -165,8 +163,6 @@ class WebSecurityConfiguration extends GlobalAuthenticationConfigurerAdapter {
 @EnableWebSecurity
 @Configuration
 class WebSecurityConfig extends WebSecurityConfigurerAdapter {
-
-
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {

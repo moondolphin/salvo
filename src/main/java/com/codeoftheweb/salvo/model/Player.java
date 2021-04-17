@@ -2,7 +2,6 @@ package com.codeoftheweb.salvo.model;
 
 import net.minidev.json.annotate.JsonIgnore;
 import org.hibernate.annotations.GenericGenerator;
-
 import javax.persistence.*;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -63,7 +62,7 @@ public class Player {
         return scores.stream().filter(score -> score.getGame().getId()==game.getId()).findFirst().orElse(null);
     }
 
-    //---para evitar la recursividad---//
+    //---for avoid recursion---//
     @JsonIgnore
     public List<Game> getGames () {
         return gamesPlayers.stream().map(sub-> sub.getGame()).collect(Collectors.toList());
