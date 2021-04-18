@@ -8,13 +8,13 @@
 <p>Project developed in Java programming language <strong>Java</strong></p>
 </li>
 <li>
-<p>Using <strong>Java: javac 11.0.10</strong></p>
+<p>Use of <strong>Java: javac 11.0.10</strong></p>
 </li>
 <li>
-<p>Using <strong>Spring Boot: 2.4.5</strong></p>
+<p>Use of <strong>Spring Boot: 2.4.5</strong></p>
 </li>
 <li>
-<p>Using <strong>Maven: Apache Maven 3.6.3</strong></p>
+<p>Use of <strong>Maven: Apache Maven 3.6.3</strong></p>
 </li>
 <li>
 
@@ -24,7 +24,7 @@
 <p>FrontEnd desarrollado en <strong>HTML5</strong>, <strong>CSS3</strong> y <strong>Javascript</strong></p>
 </li>
 <li>
-<p>Using framework <strong>Bootstrap v4.1.1</strong></p>
+<p>Use of framework <strong>Bootstrap v4.1.1</strong></p>
 </li>
 <li>
 <p>Library <strong>Jquery 3.3.1</strong></p>
