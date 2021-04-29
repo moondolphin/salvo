@@ -174,7 +174,8 @@ public class ApplicationController {
                     patrolboatHitsInTurn++;
                     hitCellsList.add(salvoLocation);
                     missedShots--;
-                }}
+                }
+            }
                 map2.put("carrierHits", carrierHitsInTurn);
                 map2.put("battleshipHits", battleshipHitsInTurn);
                 map2.put("submarineHits", submarineHitsInTurn);
